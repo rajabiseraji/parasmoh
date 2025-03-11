@@ -3,30 +3,77 @@
 	<head>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Parastoo & Mohammad's Wedding</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700 &family=Roboto:wght@300;400&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-			.eb-garamond-regular {
-				font-family: "EB Garamond", serif;
-				font-optical-sizing: auto;
-				font-weight: 100;
-				font-style: normal;
-			}
-			.eb-garamond-bold {
-				font-family: "EB Garamond", serif;
-				font-optical-sizing: auto;
-				font-weight: 600;
-				font-style: normal;
-			}
+			.lato-thin {
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            }
+
+            .lato-light {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            }
+
+            .lato-regular {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .lato-bold {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+
+            .lato-black {
+            font-family: "Lato", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            }
+
+            .lato-thin-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-style: italic;
+            }
+
+            .lato-light-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            }
+
+            .lato-regular-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            }
+
+            .lato-bold-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            }
+
+            .lato-black-italic {
+            font-family: "Lato", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            }
+
 
 			body {
 				margin: 0;
 				padding: 0;
-				font-family: 'Roboto', sans-serif;
 				background-color: #f8f8f8;
 			}
 
@@ -67,6 +114,7 @@
 			.texts {
 				padding: 30px 20px;
 				text-align: left;
+                color: #a9a9a9;
 			}
 
 			.main-img {
@@ -74,14 +122,12 @@
 			}
 
 			.title {
-				font-family: 'Playfair Display', serif;
-				font-size: 2.2rem;
+				font-size: 1.5rem;
 				margin-bottom: 5px;
 				color: #333;
 			}
 
 			.names {
-				font-family: 'Playfair Display', serif;
 				font-size: 2.8rem;
 				margin: 10px 0 30px;
 				color: #333;
@@ -97,17 +143,21 @@
 			.rsvp-button {
 				display: inline-block;
 				padding: 12px 50px;
-				border: 2px solid #333;
+				border: 2px solid #bebebe;
 				border-radius: 50px;
 				text-decoration: none;
-				color: #333;
+				color: #bebebe;
 				font-size: 1.2rem;
 				transition: all 0.3s ease;
+                cursor: not-allowed;
+                pointer-events: all !important;
 			}
 
 			.rsvp-button:hover {
-				background-color: #333;
-				color: white;
+				background-color: #efefef;
+				color: gray;
+                cursor: not-allowed;
+                pointer-events: all !important;
 			}
 		</style>
 	</head>
@@ -115,16 +165,16 @@
 
 		<div class="invitation-container">
 			<div class="texts">
-				<h2 class="title eb-garamond-regular">We're Getting Married</h2>
-				<h1 class="names eb-garamond-bold">Parastoo & Mohammad</h1>
+				<h2 class="title lato-light">We're Getting Married</h2>
+				<h1 class="names lato-bold">Parastoo & Mohammad</h1>
 
-				<div class="details eb-garamond-regular">
+				<div class="details lato-regular">
 					<p>Thursday, August 14, 2025
 						<br/>
 						Grouse Mountain Lodge, North Vancouver</p>
 				</div>
 
-				<a href="rsvp.html" class="rsvp-button eb-garamond-regular">RSVP</a>
+				<a disabled class="rsvp-button lato-light">Stay tuned!</a>
 			</div>
 
 			<img src="1.jpg" class="main-img" alt=""></img>
